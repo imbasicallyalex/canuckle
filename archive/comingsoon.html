@@ -16,27 +16,13 @@
 
     gtag('config', 'G-51PE0HTHXT');
     </script>
-    
-    <!-- FB Meta Tags -->
-    <meta property="og:url" content="http://archive.canucklegame.ca">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Canuckle Archive - A daily Canadian word game archive">
-    <meta property="og:description" content="Guess the hidden word in 6 tries.  Play an archive of Canadian word game puzzles.">
-    <meta property="og:image" content="https://canucklegame.github.io/canuckle/images/canucklearchive_og_1200x630.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://canucklegame.github.io/canuckle/images/canucklearchive_og_1200x630.png" />
-    <meta name="theme-color" content="#ff0000" />
-    <link rel="manifest" href="https://canucklegame.github.io/canuckle/archive/images/manifest.json" />
-    <link href="https://canucklegame.github.io/canuckle/images/canuckle_logo_32x32.png" rel="icon shortcut" sizes="3232" />
-    <link href="https://canucklegame.github.io/canuckle/images/canuckle_logo_192x192.png" rel="apple-touch-icon" />
-
+   
     <style>
       /* Global Styles & Colors */
       :root {
         --red: #FF0000; /* #6aaa64; */
         --darkendRed: #FF0000; /*#538d4e; */
+        --pink:#ff3baa
         --yellow: #c9b458;
         --darkendYellow: #b59f3b;
         --lightGray: #d8d8d8;
@@ -81,8 +67,8 @@
         --color-background: var(--color-tone-7);
       }
       :root {
-        --color-present: var(--yellow);
-        --color-correct: var(--red);
+        --color-present: var(--pink);
+        --color-correct: var(--orange);
         --color-absent: var(--color-tone-2);
         --tile-text-color: var(--color-tone-7);
         --key-text-color: var(--color-tone-1);
@@ -114,13 +100,6 @@
         --key-bg-correct: var(--color-correct);
         --key-bg-absent: var(--color-absent);
       }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-      }
-
       html {
         height: 100%;
       }
@@ -132,16 +111,6 @@
         /* Prevent scrollbar appearing on page transition */
         overflow-y: hidden;
       }
-      img {
-        height: auto;
-<<<<<<< HEAD
-        width: 80%;
-=======
-        width: 100%;
->>>>>>> gh-sandbox
-        text-align: center;
-      }
-
     </style>
   </head>
   <body>
@@ -150,11 +119,11 @@
       (function () {
         // Defining the hash before the main bundle allows the bundle access window.hash
         window.canuckle = window.canuckle || {};
-        window.canuckle.hash = 'archive-v1';
+        window.canuckle.hash = 'canoe-v3';
       })();
     </script>
-    <script src="./game_files/main.archive-v1.js"></script>
-    <img class="center" src="https://canucklegame.github.io/canuckle/images/canucklearchive_og_1200x630.png" title="Canuckle Archive - A daily Canadian word game archive" alt="Canuckle Archive - A daily Canadian word game archive"><div align="center"><b>COMING SOON!</b></div>
+    <script src="./game_files/main.canoe-v3.js"></script>
+    <game-app></game-app>
   
 
 </body></html>
